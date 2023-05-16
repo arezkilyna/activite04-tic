@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mon site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            background-color: #95A5A6;
+        }
+        
+        h1 {
+            color: blue;
+            text-align: center;
+            font-size: 24px;
+        }
+        
+        p {
+            color: #333;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>système de gestion de version</h1>
+    <p>Il existe deux façons de créer un dépôt Git : On peut importer un répertoire déjà existant dans Git ; On peut cloner un dépôt Git déjà existant.
+
+ Cloner un dépôt Git La deuxième façon de démarrer un dépôt Git est de cloner localement un dépôt Git déjà existant.
+
+Git git push -u origin main 
+Si on vérifier notre repo sur GitHub, on peut voir les deux fichiers : Ajouter ou modifier des fichiers dans un projet et actualiser notre dépôt Git A ce niveau, nous avons donc d'un côté notre projet contenant un ensemble de fichiers et de ressources sur lesquelles on travaille ainsi qu'un dépôt Git qui sert gérer les différentes versions de notre projet.
+
+A chaque fois qu'on souhaite enregistrer une modification de fichier ou un ajout de fichier dans le dépôt Git, on va devoir utiliser les commandes git add et git commit comme on a pu le faire dans la leçon précédente.
+
+Cela signifie que si vous effectuer une commande git add sur un fichier puis modifiez nouveau le fichier puis effectuez un git commit, c'est le fichier dans son état au moment du dernier git add qui sera validé et les dernières modifications ne seront donc pas enregistrées dans le dépôt Git.
+
+Pour mettre en un coup les fichiers modifiés et déjà sous suivi dans la zone d'index puis pour les valider, vous pouvez également utiliser git commit avec une option -a comme ceci : git commit -a. Cela vous dispense d'avoir taper git add.
+
+Consulter l'historique des modifications Git La manière la plus simple de consulter l'historique des modifications Git est d'utiliser la commande git log</p>
+    
+</body>
+</html>
